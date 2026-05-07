@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strzelec Wrocław - Noclegi i Restauracja</title>
+    <!-- Pobranie eleganckich, nowoczesnych czcionek od Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Zdefiniowanie głównych kolorów */
+        :root {
+            --primary: #1A3C34; /* Elegancka butelkowa zieleń */
+            --accent: #D4AF37;  /* Złoty akcent */
+            --bg: #FAFAFA;      /* Bardzo jasny szary do tła */
+            --text: #333333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background-color: var(--bg); }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--primary); }
+
+        /* Górne Menu (Navbar) */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 26px; font-weight: 700; color: var(--primary); text-decoration: none; font-family: 'Playfair Display', serif; letter-spacing: 2px;}
+        nav { display: flex; gap: 25px; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 13px; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--accent); }
+        .btn { background: var(--accent); color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; text-transform: uppercase; font-size: 13px; transition: background 0.3s; letter-spacing: 1px;}
+        .btn:hover { background: #b5952f; }
+
+        /* Sekcja Główna z tłem (Hero) */
+        .hero { height: 85vh; background: linear-gradient(rgba(26, 60, 52, 0.7), rgba(26, 60, 52, 0.8)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .hero h1 { color: white; font-size: 52px; margin-bottom: 20px; max-width: 900px; line-height: 1.2; }
+        .hero p { color: white; font-size: 18px; margin-bottom: 40px; max-width: 650px; font-weight: 300; line-height: 1.6; }
+        .hero-btns { display: flex; gap: 20px; }
+        .btn-outline { background: transparent; border: 2px solid white; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; text-transform: uppercase; font-size: 13px; transition: all 0.3s; letter-spacing: 1px;}
+        .btn-outline:hover { background: white; color: var(--primary); }
+
+        /* Sekcja Usług (Kafelki) */
+        .services { padding: 90px 5%; text-align: center; }
+        .services h2 { font-size: 40px; margin-bottom: 60px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.06); transition: transform 0.3s; text-align: left;}
+        .card:hover { transform: translateY(-10px); }
+        .card-image { min-height: 220px; background-position: center; background-size: cover; }
+        .card-image-rooms { background-image: linear-gradient(rgba(26, 60, 52, 0.08), rgba(26, 60, 52, 0.08)), url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80'); }
+        .card-image-restaurant { background-image: linear-gradient(rgba(26, 60, 52, 0.08), rgba(26, 60, 52, 0.08)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80'); }
+        .card-image-events { background-image: linear-gradient(rgba(26, 60, 52, 0.08), rgba(26, 60, 52, 0.08)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80'); }
+        .card-image-catering { background-image: linear-gradient(rgba(26, 60, 52, 0.08), rgba(26, 60, 52, 0.08)), url('https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80'); }
+        .card-content { padding: 30px; }
+        .card-content h3 { margin-bottom: 15px; font-size: 24px; }
+        .card-content p { font-size: 15px; line-height: 1.6; color: #666; margin-bottom: 25px; }
+        .card-content a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 13px; text-transform: uppercase; display: inline-block; transition: transform 0.2s;}
+        .card-content a:hover { transform: translateX(5px); }
+        .card, .contact { scroll-margin-top: 110px; }
+
+        /* Kontakt */
+        .contact { padding: 80px 5%; background: white; text-align: center; }
+        .contact h2 { font-size: 36px; margin-bottom: 18px; }
+        .contact p { max-width: 680px; margin: 0 auto 30px; line-height: 1.7; color: #666; }
+        .contact-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .contact .btn-outline { border-color: var(--primary); color: var(--primary); }
+        .contact .btn-outline:hover { background: var(--primary); color: white; }
+
+        /* Stopka */
+        footer { background: var(--primary); color: white; text-align: center; padding: 50px 20px; }
+        footer p { opacity: 0.7; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#top" class="logo">STRZELEC</a>
+        <nav>
+            <a href="#pokoje">Pokoje</a>
+            <a href="#restauracja">Restauracja</a>
+            <a href="#wesela">Wesela</a>
+            <a href="#catering">Catering</a>
+        </nav>
+        <a href="#kontakt" class="btn">Kontakt</a>
+    </header>
+
+    <section class="hero" id="top">
+        <h1>Twój przystanek na odpoczynek i doskonały smak</h1>
+        <p>Nowoczesne pokoje, wyśmienita kuchnia i elegancka przestrzeń na Twoje najważniejsze wydarzenia we Wrocławiu. Poczuj naszą gościnność.</p>
+        <div class="hero-btns">
+            <a href="#pokoje" class="btn">Zobacz pokoje</a>
+            <a href="#restauracja" class="btn-outline">Zobacz menu</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Poznaj naszą ofertę</h2>
+        <div class="grid">
+            <div class="card" id="pokoje">
+                <div class="card-image card-image-rooms" role="img" aria-label="Pokoje hotelowe"></div>
+                <div class="card-content">
+                    <h3>Odpocznij u nas</h3>
+                    <p>Komfortowe i nowoczesne noclegi w dogodnej lokalizacji. Idealne na spokojną podróż służbową oraz weekendowy relaks.</p>
+                    <a href="#kontakt">Zapytaj o dostępność &rarr;</a>
+                </div>
+            </div>
+            <div class="card" id="restauracja">
+                <div class="card-image card-image-restaurant" role="img" aria-label="Dania w restauracji"></div>
+                <div class="card-content">
+                    <h3>Zasmakuj</h3>
+                    <p>Autorskie menu, wyłącznie świeże składniki i wyjątkowa atmosfera w naszej eleganckiej restauracji.</p>
+                    <a href="#kontakt">Zapytaj o menu &rarr;</a>
+                </div>
+            </div>
+            <div class="card" id="wesela">
+                <div class="card-image card-image-events" role="img" aria-label="Sala weselna"></div>
+                <div class="card-content">
+                    <h3>Świętuj z nami</h3>
+                    <p>Niezapomniane wesela, bankiety i uroczystości rodzinne. Dbamy o każdy detal, by Twój dzień był perfekcyjny.</p>
+                    <a href="#kontakt">Zapytaj o ofertę &rarr;</a>
+                </div>
+            </div>
+            <div class="card" id="catering">
+                <div class="card-image card-image-catering" role="img" aria-label="Stół z cateringiem"></div>
+                <div class="card-content">
+                    <h3>Catering</h3>
+                    <p>Profesjonalna i pyszna obsługa cateringowa Twojego wydarzenia wraz z możliwością wypożyczenia pełnej zastawy.</p>
+                    <a href="#kontakt">Skontaktuj się &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <h2>Skontaktuj się ze Strzelcem</h2>
+        <p>Nie dodajemy systemu rezerwacji online, ponieważ obiekt go nie posiada. Zamiast tego zachęcamy do bezpośredniego kontaktu w sprawie noclegów, restauracji, cateringu oraz organizacji przyjęć.</p>
+        <div class="contact-actions">
+            <a href="http://strzelecwroclaw.pl/" class="btn">Obecna strona</a>
+            <a href="#top" class="btn-outline">Wróć na górę</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Strzelec Wrocław. Prototyp nowej strony.</p>
+    </footer>
+</body>
+</html>
