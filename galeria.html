@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria | Strzelec Wrocław</title>
+  <meta name="description" content="Galeria zdjęć Strzelec Wrocław – pokoje, restauracja, sale bankietowe, catering i teren obiektu. ul. Świątnicka 36.">
+  <!-- <link rel="canonical" href="https://strzelecwroclaw.pl/galeria.html"> -->
+  <meta property="og:title" content="Galeria | Strzelec Wrocław">
+  <meta property="og:description" content="Zdjęcia pokoi, restauracji, sal i terenu obiektu Strzelec Wrocław.">
+  <meta property="og:image" content="assets/img/hero/hero-glowna.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+  <!-- HEADER START -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Strzelec Wrocław – strona główna"><img src="assets/img/logo.png" class="logo-img" alt="Logo Strzelec Wrocław" width="48" height="34"></a>
+      <nav class="site-nav" aria-label="Główna nawigacja">
+        <a href="index.html">Strona główna</a>
+        <a href="pokoje.html">Pokoje</a>
+        <a href="restauracja.html">Restauracja</a>
+        <a href="catering.html">Catering</a>
+        <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
+        <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="o-strzelcu.html">O Strzelcu</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <a href="tel:+48733123621" class="header-cta desktop-only" aria-label="Zadzwoń pod numer 733 123 621">📞 733 123 621</a>
+      <button class="hamburger" aria-expanded="false" aria-label="Otwórz menu" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobilne">
+    <a href="index.html">Strona główna</a>
+    <a href="pokoje.html">Pokoje</a>
+    <a href="restauracja.html">Restauracja</a>
+    <a href="catering.html">Catering</a>
+    <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
+    <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="o-strzelcu.html">O Strzelcu</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="tel:+48733123621" class="header-cta">📞 Zadzwoń: 733 123 621</a>
+  </nav>
+  <!-- HEADER END -->
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero hero--sub" aria-label="Galeria – baner">
+      <div class="hero-bg" style="background-image:url('assets/img/hero/hero-glowna.jpg')" role="img" aria-label="Strzelec Wrocław"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Galeria</h1>
+          <p>Poznaj Strzelec Wrocław przez nasze zdjęcia – pokoje, restauracja, sale i teren obiektu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" aria-labelledby="galeria-heading">
+      <div class="container">
+        <h2 id="galeria-heading" class="sr-only">Galeria zdjęć</h2>
+
+        <!-- Filtry kategorii -->
+        <div class="gallery-filters" role="group" aria-label="Filtruj zdjęcia według kategorii">
+          <button class="gallery-filter-btn active" data-filter="all" aria-pressed="true">Wszystkie</button>
+          <button class="gallery-filter-btn" data-filter="pokoje" aria-pressed="false">Pokoje</button>
+          <button class="gallery-filter-btn" data-filter="restauracja" aria-pressed="false">Restauracja</button>
+          <button class="gallery-filter-btn" data-filter="sale" aria-pressed="false">Sale</button>
+          <button class="gallery-filter-btn" data-filter="catering" aria-pressed="false">Catering</button>
+          <button class="gallery-filter-btn" data-filter="obiekt" aria-pressed="false">Obiekt</button>
+        </div>
+
+        <!-- Grid galerii -->
+        <!-- INSTRUKCJA: Dodaj zdjęcia do katalogów assets/img/galeria/, assets/img/pokoje/ itp.
+             Następnie zamień .gallery-item-placeholder na <img src="..." alt="...">
+             Zachowaj atrybut data-category na każdym .gallery-item -->
+        <div class="gallery-grid" aria-label="Zdjęcia galerii">
+
+          <!-- Pokoje -->
+          <div class="gallery-item" data-category="pokoje" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Pokoje Strzelec Wrocław">
+            <img src="assets/img/galeria/pokoje-standard.jpg" alt="Pokoje Strzelec Wrocław" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Pokój w Strzelcu">
+            <img src="assets/img/galeria/pokoje-standard.jpg" alt="Pokój w Strzelcu Wrocław" loading="lazy">
+          </div>
+
+          <!-- Restauracja -->
+          <div class="gallery-item" data-category="restauracja" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Restauracja Strzelec – wnętrze">
+            <img src="assets/img/galeria/restauracja-wnetrze.jpg" alt="Restauracja Strzelec Wrocław – wnętrze" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="restauracja" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Restauracja Strzelec">
+            <img src="assets/img/galeria/restauracja-wnetrze.jpg" alt="Restauracja Strzelec – sala" loading="lazy">
+          </div>
+
+          <!-- Sale -->
+          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Sala bankietowa Strzelec">
+            <img src="assets/img/galeria/sala-bankietowa.jpg" alt="Sala bankietowa Strzelec Wrocław" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Sala na wesela i uroczystości">
+            <img src="assets/img/galeria/sala-bankietowa.jpg" alt="Sala na wesela i uroczystości – Strzelec" loading="lazy">
+          </div>
+
+          <!-- Catering -->
+          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Catering Strzelec Wrocław">
+            <img src="assets/img/galeria/catering-stol.jpg" alt="Catering Strzelec Wrocław" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Stół cateringowy">
+            <img src="assets/img/galeria/catering-stol.jpg" alt="Przygotowanie cateringu Strzelec" loading="lazy">
+          </div>
+
+          <!-- Obiekt -->
+          <div class="gallery-item" data-category="obiekt" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Widok obiektu Strzelec Wrocław">
+            <img src="assets/img/galeria/obiekt-widok.jpg" alt="Obiekt Strzelec Wrocław – widok zewnętrzny" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="obiekt" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Teren Strzelca">
+            <img src="assets/img/galeria/obiekt-1.jpg" alt="Teren obiektu Strzelec Wrocław" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="galeria-cta-heading">
+      <div class="container">
+        <h2 id="galeria-cta-heading">Chcesz zobaczyć więcej?</h2>
+        <p>Zapraszamy do odwiedzenia obiektu lub kontaktu telefonicznego.</p>
+        <div class="cta-buttons">
+          <a href="tel:+48733123621" class="btn btn--outline btn--lg">📞 Zadzwoń: 733 123 621</a>
+          <a href="kontakt.html" class="btn btn--outline btn--lg">Kontakt</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+    <button class="lightbox-close" aria-label="Zamknij podgląd zdjęcia">✕</button>
+    <button class="lightbox-prev" aria-label="Poprzednie zdjęcie">‹</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-next" aria-label="Następne zdjęcie">›</button>
+  </div>
+
+  <!-- FOOTER START -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-name">Strzelec Wrocław</div>
+          <div class="footer-tagline">noclegi • restauracja • catering</div>
+          <div class="footer-contact">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener">📍 ul. Świątnicka 36, 52-018 Wrocław</a>
+            <a href="tel:+48733123621">📞 733 123 621</a>
+            <a href="tel:+48733123622">📞 733 123 622</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook Strzelec Wrocław" title="Facebook">f</a>
+            <a href="#" aria-label="Instagram Strzelec Wrocław" title="Instagram">📸</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Oferta</h4>
+          <nav class="footer-links" aria-label="Linki do podstron">
+            <a href="pokoje.html">Pokoje</a>
+            <a href="restauracja.html">Restauracja</a>
+            <a href="catering.html">Catering</a>
+            <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
+            <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
+            <a href="zastawa.html">Wypożyczalnia zastawy</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Informacje</h4>
+          <nav class="footer-links" aria-label="Linki informacyjne">
+            <a href="galeria.html">Galeria</a>
+            <a href="o-strzelcu.html">O Strzelcu</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="praca.html">Praca</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="copyright-year">2026</span> Strzelec Wrocław. Wszelkie prawa zastrzeżone.</span>
+        <span>ul. Świątnicka 36, 52-018 Wrocław</span>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

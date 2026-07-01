@@ -1,0 +1,5 @@
+.DS_Store
+.cursor/
+openspec/
+assets/img/source/
+node_modules/

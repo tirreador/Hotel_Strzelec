@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- Zewntrzny okrg -->
+  <circle cx="110" cy="110" r="106" fill="none" stroke="#2E5E4E" stroke-width="3"/>
+  <!-- Wewntrzny okrg -->
+  <circle cx="110" cy="110" r="96" fill="#2E5E4E"/>
+
+  <!-- Tarcza strzelecka  pier[cienie -->
+  <circle cx="110" cy="98" r="52" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="110" cy="98" r="36" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="110" cy="98" r="20" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <circle cx="110" cy="98" r="6"  fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Linia pozioma i pionowa celownika -->
+  <line x1="50" y1="98" x2="74" y2="98" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="146" y1="98" x2="170" y2="98" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="110" y1="38" x2="110" y2="62" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <line x1="110" y1="134" x2="110" y2="158" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+  <!-- Tekst STRZELEC -->
+  <text x="110" y="168"
+        font-family="'Playfair Display', 'Georgia', serif"
+        font-size="22"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="3">STRZELEC</text>
+
+  <!-- Linia ozdobna -->
+  <line x1="48" y1="176" x2="172" y2="176" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+
+  <!-- Tekst WROCAAW -->
+  <text x="110" y="191"
+        font-family="'Inter', 'Arial', sans-serif"
+        font-size="10"
+        font-weight="500"
+        fill="rgba(255,255,255,0.75)"
+        text-anchor="middle"
+        letter-spacing="4">WROCAAW</text>
+</svg>
