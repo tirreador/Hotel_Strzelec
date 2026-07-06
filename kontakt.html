@@ -3,230 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | Strzelec Wrocław</title>
-  <meta name="description" content="Kontakt ze Strzelcem Wrocław – telefon 733 123 621, adres ul. Świątnicka 36, formularz kontaktowy i mapa dojazdu.">
-  <!-- <link rel="canonical" href="https://strzelecwroclaw.pl/kontakt.html"> -->
-  <meta property="og:title" content="Kontakt | Strzelec Wrocław">
-  <meta property="og:description" content="Skontaktuj się ze Strzelcem Wrocław. Tel. 733 123 621, ul. Świątnicka 36, 52-018 Wrocław.">
-  <meta property="og:image" content="assets/img/hero/hero-glowna.jpg">
+  <title>Kontakt – Hotel Strzelec Wrocław</title>
+  <meta name="description" content="Skontaktuj się z Hotelem Strzelec Wrocław – zarezerwuj nocleg, zapytaj o imprezę lub catering. Tel: 733 123 621. ul. Świątnicka 36, Wrocław.">
+  <meta property="og:title" content="Kontakt – Hotel Strzelec Wrocław">
+  <meta property="og:description" content="Zapytaj o nocleg, imprezę lub catering. Tel: 733 123 621. ul. Świątnicka 36, Wrocław.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .kontakt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); align-items: start; }
-    @media (max-width: 768px) { .kontakt-grid { grid-template-columns: 1fr; } }
-    .contact-actions { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
-  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Przejdź do treści</a>
 
-  <!-- HEADER START -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="header-logo" aria-label="Strzelec Wrocław – strona główna"><img src="assets/img/logo.png" class="logo-img" alt="Logo Strzelec Wrocław" width="48" height="34"></a>
+      <a href="index.html" class="header-logo" aria-label="Hotel Strzelec – strona główna">
+        <img src="assets/img/logo.png" class="logo-img" alt="Logo Hotel Strzelec Wrocław" width="48" height="34">
+      </a>
       <nav class="site-nav" aria-label="Główna nawigacja">
-        <a href="index.html">Strona główna</a>
-        <a href="pokoje.html">Pokoje</a>
-        <a href="restauracja.html">Restauracja</a>
+        <a href="index.html">Start</a>
+        <a href="noclegi.html">Noclegi</a>
+        <a href="imprezy.html">Imprezy</a>
         <a href="catering.html">Catering</a>
-        <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-        <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
         <a href="galeria.html">Galeria</a>
-        <a href="o-strzelcu.html">O Strzelcu</a>
-        <a href="zastawa.html">Wypożyczalnia zastawy</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
       </nav>
-      <a href="tel:+48733123621" class="header-cta desktop-only" aria-label="Zadzwoń pod numer 733 123 621">📞 733 123 621</a>
+      <a href="kontakt.html" class="header-cta desktop-only">Zarezerwuj / Zapytaj</a>
       <button class="hamburger" aria-expanded="false" aria-label="Otwórz menu" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobilne">
-    <a href="index.html">Strona główna</a>
-    <a href="pokoje.html">Pokoje</a>
-    <a href="restauracja.html">Restauracja</a>
+    <a href="index.html">Start</a>
+    <a href="noclegi.html">Noclegi</a>
+    <a href="imprezy.html">Imprezy</a>
     <a href="catering.html">Catering</a>
-    <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-    <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
     <a href="galeria.html">Galeria</a>
-    <a href="o-strzelcu.html">O Strzelcu</a>
-    <a href="zastawa.html">Wypożyczalnia zastawy</a>
     <a href="kontakt.html">Kontakt</a>
-    <a href="tel:+48733123621" class="header-cta">📞 Zadzwoń: 733 123 621</a>
+    <a href="kontakt.html" class="header-cta">Zarezerwuj / Zapytaj</a>
   </nav>
-  <!-- HEADER END -->
 
   <main id="main-content">
 
-    <!-- HERO -->
     <section class="hero hero--sub" aria-label="Kontakt – baner">
-      <div class="hero-bg" style="background-image:url('assets/img/hero/hero-glowna.jpg')" role="img" aria-label="Strzelec Wrocław"></div>
+      <div class="hero-bg" style="background-image:url('assets/img/hero/obiekt.jpg')" role="img" aria-label="Hotel Strzelec Wrocław"></div>
       <div class="container">
         <div class="hero-content">
-          <h1>Kontakt</h1>
-          <p>Zadzwoń, napisz lub wyznacz trasę. Jesteśmy dostępni codziennie i chętnie odpowiemy na każde pytanie.</p>
-          <div class="hero-cta">
-            <a href="tel:+48733123621" class="btn btn--primary btn--lg">📞 Zadzwoń: 733 123 621</a>
-          </div>
+          <span class="hero-eyebrow fade-up">Jesteśmy do dyspozycji</span>
+          <h1 class="fade-up-2">Zapytaj o termin, nocleg albo catering</h1>
+          <p class="fade-up-3">Odpowiadamy szybko. Zadzwoń lub wypełnij formularz — odezwiemy się w ciągu dnia.</p>
         </div>
       </div>
     </section>
 
-    <!-- DANE + MAPA -->
-    <section class="section" aria-labelledby="dane-heading">
+    <!-- KONTAKT GŁÓWNY -->
+    <section class="section section--alt" aria-labelledby="kontakt-heading">
       <div class="container">
-        <div class="kontakt-grid">
-
-          <!-- Dane kontaktowe -->
+        <div class="contact-block">
+          <!-- LEWA: opcje kontaktu -->
           <div>
-            <h2 id="dane-heading">Dane kontaktowe</h2>
-            <div class="contact-info" style="margin-top:1.5rem;">
-              <div class="contact-info-row">
-                <div class="ci-icon" aria-hidden="true">🏢</div>
-                <div>
-                  <h4>Nazwa</h4>
-                  <p><strong>Hotel Strzelec Wrocław</strong></p>
+            <div class="section-header">
+              <span class="section-label">Dane kontaktowe</span>
+              <h2 id="kontakt-heading">Hotel Strzelec Wrocław</h2>
+            </div>
+
+            <div class="contact-options">
+              <div class="contact-option">
+                <div class="co-icon">🛏</div>
+                <div class="co-body">
+                  <h4>Recepcja / Noclegi</h4>
+                  <p>Rezerwacja pokoi, dostępność i cennik</p>
+                  <a href="tel:+48733123621">733 123 621</a>
                 </div>
               </div>
-              <div class="contact-info-row">
-                <div class="ci-icon" aria-hidden="true">📍</div>
-                <div>
+              <div class="contact-option">
+                <div class="co-icon">🎉</div>
+                <div class="co-body">
+                  <h4>Imprezy okolicznościowe</h4>
+                  <p>Wesela, chrzciny, komunie, bankiety, jubileusze</p>
+                  <a href="tel:+48733123622">733 123 622</a>
+                </div>
+              </div>
+              <div class="contact-option">
+                <div class="co-icon">🍽</div>
+                <div class="co-body">
+                  <h4>Catering i restauracja</h4>
+                  <p>Zamówienia, menu, wyceny i terminy</p>
+                  <a href="tel:+48733123621">733 123 621</a>
+                </div>
+              </div>
+              <div class="contact-option">
+                <div class="co-icon">📍</div>
+                <div class="co-body">
                   <h4>Adres</h4>
                   <p>ul. Świątnicka 36<br>52-018 Wrocław</p>
                 </div>
               </div>
-              <div class="contact-info-row">
-                <div class="ci-icon" aria-hidden="true">📞</div>
-                <div>
-                  <h4>Telefon</h4>
-                  <p><a href="tel:+48733123621">733 123 621</a></p>
-                  <p><a href="tel:+48733123622">733 123 622</a></p>
+              <div class="contact-option">
+                <div class="co-icon">🕐</div>
+                <div class="co-body">
+                  <h4>Godziny kontaktu</h4>
+                  <p>Codziennie 8:00 – 20:00</p>
                 </div>
               </div>
             </div>
-            <div class="contact-actions">
-              <a href="tel:+48733123621" class="btn btn--primary btn--lg">📞 Zadzwoń: 733 123 621</a>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener" class="btn btn--outline-dark btn--lg">🗺 Wyznacz trasę</a>
-              <!-- Odkomentuj i uzupełnij po potwierdzeniu adresu e-mail: -->
-              <!-- <a href="mailto:kontakt@strzelecwroclaw.pl" class="btn btn--outline-dark btn--lg">✉ Napisz e-mail</a> -->
-            </div>
           </div>
 
-          <!-- Mapa -->
-          <div>
-            <iframe
-              src="https://maps.google.com/maps?q=ul.+%C5%9Awi%C4%85tnicka+36%2C+52-018+Wroc%C5%82aw&output=embed&hl=pl"
-              width="100%"
-              height="420"
-              style="border:0; border-radius:12px; display:block;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Lokalizacja Strzelec Wrocław – ul. Świątnicka 36"
-              aria-label="Mapa Google Maps: Strzelec Wrocław, ul. Świątnicka 36">
-            </iframe>
+          <!-- PRAWA: formularz -->
+          <div class="contact-form" id="formularz">
+            <h3>Wyślij zapytanie</h3>
+            <form action="#" method="post" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="imie">Imię i nazwisko <span style="color:var(--gold)">*</span></label>
+                  <input type="text" id="imie" name="imie" placeholder="Jan Kowalski" required>
+                </div>
+                <div class="form-group">
+                  <label for="telefon">Telefon <span style="color:var(--gold)">*</span></label>
+                  <input type="tel" id="telefon" name="telefon" placeholder="600 000 000" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="jan@przykład.pl">
+              </div>
+              <div class="form-group">
+                <label for="temat">Temat <span style="color:var(--gold)">*</span></label>
+                <select id="temat" name="temat" required>
+                  <option value="" disabled selected>Wybierz temat</option>
+                  <option value="nocleg">Nocleg</option>
+                  <option value="impreza">Impreza okolicznościowa</option>
+                  <option value="catering">Catering</option>
+                  <option value="inne">Inne</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="termin">Preferowany termin</label>
+                  <input type="date" id="termin" name="termin">
+                </div>
+                <div class="form-group">
+                  <label for="osoby">Liczba osób</label>
+                  <input type="number" id="osoby" name="osoby" placeholder="np. 50" min="1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="wiadomosc">Wiadomość</label>
+                <textarea id="wiadomosc" name="wiadomosc" placeholder="Opisz krótko, w czym możemy Ci pomóc..."></textarea>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="rodo" name="rodo" required>
+                <label for="rodo">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie, zgodnie z obowiązującymi przepisami RODO. <span style="color:var(--gold)">*</span></label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full btn--lg">Wyślij zapytanie</button>
+            </form>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- FORMULARZ -->
-    <section class="section section--alt" aria-labelledby="formularz-heading">
-      <div class="container" style="max-width:720px;">
-        <div class="section-header">
-          <h2 id="formularz-heading">Formularz kontaktowy</h2>
-          <p>Napisz do nas – odpowiemy najszybciej jak to możliwe.</p>
+    <!-- MAPA -->
+    <section class="section" aria-labelledby="mapa-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-label">Jak do nas trafić</span>
+          <h2 id="mapa-heading">ul. Świątnicka 36, Wrocław</h2>
+          <p>Duży, bezpłatny parking na terenie obiektu.</p>
         </div>
-
-        <!--
-          FORMSPREE: Aby aktywować wysyłanie e-maili, zmień action formularza na endpoint Formspree:
-          https://formspree.io/f/TWOJ_ID
-          Przykład: <form action="https://formspree.io/f/xyzabc12" method="POST">
-        -->
-        <form class="contact-form" action="#" method="POST" novalidate aria-label="Formularz kontaktowy">
-          <div class="grid grid--2" style="gap:1rem;">
-            <div class="form-group">
-              <label for="imie">Imię i nazwisko <span aria-hidden="true">*</span></label>
-              <input type="text" id="imie" name="imie" autocomplete="name" required placeholder="Jan Kowalski">
-            </div>
-            <div class="form-group">
-              <label for="telefon">Telefon</label>
-              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="123 456 789">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Adres e-mail <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" name="email" autocomplete="email" required placeholder="jan@example.com">
-          </div>
-          <div class="form-group">
-            <label for="temat">Temat</label>
-            <input type="text" id="temat" name="temat" placeholder="np. Rezerwacja pokoju, Catering na wesele...">
-          </div>
-          <div class="form-group">
-            <label for="wiadomosc">Wiadomość <span aria-hidden="true">*</span></label>
-            <textarea id="wiadomosc" name="wiadomosc" required placeholder="Opisz czego szukasz lub zapytaj o cokolwiek..."></textarea>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" id="rodo" name="rodo" required>
-            <label for="rodo">
-              Wyrażam zgodę na przetwarzanie moich danych osobowych przez Strzelec Wrocław w celu udzielenia odpowiedzi na przesłane zapytanie, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO). <span aria-hidden="true">*</span>
-            </label>
-          </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--full">Wyślij wiadomość</button>
-          <p class="text-muted mt-2" style="font-size:0.8rem; text-align:center;">Pola oznaczone * są wymagane. Alternatywnie zadzwoń: <a href="tel:+48733123621" style="color:var(--color-accent);">733 123 621</a></p>
-        </form>
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=ul.+%C5%9Awi%C4%85tnicka+36%2C+52-018+Wroc%C5%82aw&output=embed&hl=pl"
+            width="100%"
+            height="420"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokalizacja Hotel Strzelec Wrocław – ul. Świątnicka 36"
+            aria-label="Mapa Google Maps: Hotel Strzelec, ul. Świątnicka 36, Wrocław">
+          </iframe>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER START -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-name">Strzelec Wrocław</div>
-          <div class="footer-tagline">noclegi • restauracja • catering</div>
+          <img src="assets/img/logo.png" alt="Logo Hotel Strzelec" class="footer-logo">
+          <div class="footer-tagline">noclegi · przyjęcia · dobra kuchnia</div>
           <div class="footer-contact">
             <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener">📍 ul. Świątnicka 36, 52-018 Wrocław</a>
             <a href="tel:+48733123621">📞 733 123 621</a>
             <a href="tel:+48733123622">📞 733 123 622</a>
           </div>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook Strzelec Wrocław" title="Facebook">f</a>
-            <a href="#" aria-label="Instagram Strzelec Wrocław" title="Instagram">📸</a>
-          </div>
         </div>
         <div class="footer-col">
           <h4>Oferta</h4>
-          <nav class="footer-links" aria-label="Linki do podstron">
-            <a href="pokoje.html">Pokoje</a>
-            <a href="restauracja.html">Restauracja</a>
-            <a href="catering.html">Catering</a>
-            <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-            <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
+          <nav class="footer-links">
+            <a href="noclegi.html">Noclegi</a>
+            <a href="imprezy.html">Imprezy okolicznościowe</a>
+            <a href="catering.html">Catering i restauracja</a>
             <a href="zastawa.html">Wypożyczalnia zastawy</a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Informacje</h4>
-          <nav class="footer-links" aria-label="Linki informacyjne">
+          <nav class="footer-links">
             <a href="galeria.html">Galeria</a>
-            <a href="o-strzelcu.html">O Strzelcu</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="praca.html">Praca</a>
           </nav>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span class="copyright-year">2026</span> Strzelec Wrocław. Wszelkie prawa zastrzeżone.</span>
+        <span>© <span class="copyright-year">2026</span> Hotel Strzelec Wrocław. Wszelkie prawa zastrzeżone.</span>
         <span>ul. Świątnicka 36, 52-018 Wrocław</span>
       </div>
     </div>
   </footer>
-  <!-- FOOTER END -->
+
+  <div class="mobile-bar" role="navigation" aria-label="Szybki kontakt">
+    <div class="mobile-bar-inner">
+      <a href="tel:+48733123621"><span class="bar-icon">📞</span>Zadzwoń</a>
+      <a href="#formularz"><span class="bar-icon">✉️</span>Zapytaj</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener"><span class="bar-icon">📍</span>Mapa</a>
+    </div>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

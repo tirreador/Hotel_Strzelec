@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria | Strzelec Wrocław</title>
-  <meta name="description" content="Galeria zdjęć Strzelec Wrocław – pokoje, restauracja, sale bankietowe, catering i teren obiektu. ul. Świątnicka 36.">
-  <!-- <link rel="canonical" href="https://strzelecwroclaw.pl/galeria.html"> -->
-  <meta property="og:title" content="Galeria | Strzelec Wrocław">
-  <meta property="og:description" content="Zdjęcia pokoi, restauracji, sal i terenu obiektu Strzelec Wrocław.">
+  <title>Galeria – Hotel Strzelec Wrocław</title>
+  <meta name="description" content="Galeria zdjęć Hotelu Strzelec Wrocław – pokoje, sale bankietowe, restauracja, catering i tereny obiektu. ul. Świątnicka 36, Wrocław.">
+  <meta property="og:title" content="Galeria – Hotel Strzelec Wrocław">
   <meta property="og:image" content="assets/img/hero/hero-glowna.jpg">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,147 +13,158 @@
 <body>
   <a class="skip-link" href="#main-content">Przejdź do treści</a>
 
-  <!-- HEADER START -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="header-logo" aria-label="Strzelec Wrocław – strona główna"><img src="assets/img/logo.png" class="logo-img" alt="Logo Strzelec Wrocław" width="48" height="34"></a>
+      <a href="index.html" class="header-logo" aria-label="Hotel Strzelec – strona główna">
+        <img src="assets/img/logo.png" class="logo-img" alt="Logo Hotel Strzelec Wrocław" width="48" height="34">
+      </a>
       <nav class="site-nav" aria-label="Główna nawigacja">
-        <a href="index.html">Strona główna</a>
-        <a href="pokoje.html">Pokoje</a>
-        <a href="restauracja.html">Restauracja</a>
+        <a href="index.html">Start</a>
+        <a href="noclegi.html">Noclegi</a>
+        <a href="imprezy.html">Imprezy</a>
         <a href="catering.html">Catering</a>
-        <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-        <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="o-strzelcu.html">O Strzelcu</a>
-        <a href="zastawa.html">Wypożyczalnia zastawy</a>
+        <a href="galeria.html" class="active">Galeria</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
-      <a href="tel:+48733123621" class="header-cta desktop-only" aria-label="Zadzwoń pod numer 733 123 621">📞 733 123 621</a>
+      <a href="kontakt.html" class="header-cta desktop-only">Zarezerwuj / Zapytaj</a>
       <button class="hamburger" aria-expanded="false" aria-label="Otwórz menu" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobilne">
-    <a href="index.html">Strona główna</a>
-    <a href="pokoje.html">Pokoje</a>
-    <a href="restauracja.html">Restauracja</a>
+    <a href="index.html">Start</a>
+    <a href="noclegi.html">Noclegi</a>
+    <a href="imprezy.html">Imprezy</a>
     <a href="catering.html">Catering</a>
-    <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-    <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
     <a href="galeria.html">Galeria</a>
-    <a href="o-strzelcu.html">O Strzelcu</a>
-    <a href="zastawa.html">Wypożyczalnia zastawy</a>
     <a href="kontakt.html">Kontakt</a>
-    <a href="tel:+48733123621" class="header-cta">📞 Zadzwoń: 733 123 621</a>
+    <a href="kontakt.html" class="header-cta">Zarezerwuj / Zapytaj</a>
   </nav>
-  <!-- HEADER END -->
 
   <main id="main-content">
 
-    <!-- HERO -->
     <section class="hero hero--sub" aria-label="Galeria – baner">
-      <div class="hero-bg" style="background-image:url('assets/img/hero/hero-glowna.jpg')" role="img" aria-label="Strzelec Wrocław"></div>
+      <div class="hero-bg" style="background-image:url('assets/img/galeria/wydarzenie-okolicznosciowe.jpg')" role="img" aria-label="Galeria Hotel Strzelec"></div>
       <div class="container">
         <div class="hero-content">
-          <h1>Galeria</h1>
-          <p>Poznaj Strzelec Wrocław przez nasze zdjęcia – pokoje, restauracja, sale i teren obiektu.</p>
+          <span class="hero-eyebrow fade-up">Galeria</span>
+          <h1 class="fade-up-2">Zobacz Hotel Strzelec na własne oczy</h1>
+          <p class="fade-up-3">Pokoje, sale, kuchnia i otoczenie — wszystko w jednym miejscu.</p>
         </div>
       </div>
     </section>
 
-    <!-- GALERIA -->
-    <section class="section" aria-labelledby="galeria-heading">
+    <section class="section section--alt" aria-labelledby="galeria-heading">
       <div class="container">
-        <h2 id="galeria-heading" class="sr-only">Galeria zdjęć</h2>
-
-        <!-- Filtry kategorii -->
-        <div class="gallery-filters" role="group" aria-label="Filtruj zdjęcia według kategorii">
-          <button class="gallery-filter-btn active" data-filter="all" aria-pressed="true">Wszystkie</button>
-          <button class="gallery-filter-btn" data-filter="pokoje" aria-pressed="false">Pokoje</button>
-          <button class="gallery-filter-btn" data-filter="restauracja" aria-pressed="false">Restauracja</button>
-          <button class="gallery-filter-btn" data-filter="sale" aria-pressed="false">Sale</button>
-          <button class="gallery-filter-btn" data-filter="catering" aria-pressed="false">Catering</button>
-          <button class="gallery-filter-btn" data-filter="obiekt" aria-pressed="false">Obiekt</button>
+        <div class="section-header">
+          <h2 id="galeria-heading">Zdjęcia obiektu</h2>
         </div>
 
-        <!-- Grid galerii -->
-        <!-- INSTRUKCJA: Dodaj zdjęcia do katalogów assets/img/galeria/, assets/img/pokoje/ itp.
-             Następnie zamień .gallery-item-placeholder na <img src="..." alt="...">
-             Zachowaj atrybut data-category na każdym .gallery-item -->
-        <div class="gallery-grid" aria-label="Zdjęcia galerii">
-
-          <!-- Pokoje -->
-          <div class="gallery-item" data-category="pokoje" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Aneks kuchenny">
-            <img src="assets/img/pokoje/aneks-kuchenny.jpg" alt="Aneks kuchenny – pokoje Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="pokoje" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Wspólna kuchnia">
-            <img src="assets/img/pokoje/aneks-kuchenny2.jpg" alt="Wspólna kuchnia dla gości – Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="pokoje" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Strefa wypoczynkowa">
-            <img src="assets/img/pokoje/strefa-wypoczynkowa.jpg" alt="Strefa wypoczynkowa – Strzelec Wrocław" loading="lazy">
-          </div>
-
-          <!-- Restauracja -->
-          <div class="gallery-item" data-category="restauracja" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Sałatka z owocami">
-            <img src="assets/img/restauracja/salatka.jpg" alt="Sałatka ze świeżych warzyw z owocami – Restauracja Strzelec" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="restauracja" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Danie główne">
-            <img src="assets/img/restauracja/kurczak.jpg" alt="Faszerowany kurczak – danie główne Restauracja Strzelec" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="restauracja" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Restauracja Strzelec – wnętrze">
-            <img src="assets/img/galeria/restauracja-wnetrze.jpg" alt="Restauracja Strzelec Wrocław – wnętrze" loading="lazy">
-          </div>
-
-          <!-- Sale -->
-          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Sala weselna złota dekoracja">
-            <img src="assets/img/wesela/sala-zlota.jpg" alt="Sala weselna – dekoracja złota, Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Sala bankietowa niebieska dekoracja">
-            <img src="assets/img/wesela/sala-niebieska.jpg" alt="Sala bankietowa – dekoracja okolicznościowa, Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Stół komunijny">
-            <img src="assets/img/wesela/stol-komunijny.jpg" alt="Nakrycie stołu na uroczystość komunijną – Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="sale" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Urodziny w Strzelcu">
-            <img src="assets/img/wesela/urodziny.jpg" alt="Urodziny i imprezy okolicznościowe – Strzelec Wrocław" loading="lazy">
-          </div>
-
-          <!-- Catering -->
-          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Zimne zakąski">
-            <img src="assets/img/catering/zakąski.jpg" alt="Zimne zakąski na przyjęcie – Catering Strzelec Wrocław" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Candy bar">
-            <img src="assets/img/catering/candy-bar.jpg" alt="Candy bar – słodki stół na uroczystość" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Bufet słodki">
-            <img src="assets/img/catering/bufet.jpg" alt="Bufet słodki – ciasta i napoje, Catering Strzelec" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="catering" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Ciasta i desery">
-            <img src="assets/img/catering/ciasta.jpg" alt="Ciasta i desery na przyjęcie – Catering Strzelec" loading="lazy">
-          </div>
-
-          <!-- Obiekt -->
-          <div class="gallery-item" data-category="obiekt" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Widok obiektu Strzelec Wrocław">
-            <img src="assets/img/galeria/obiekt-widok.jpg" alt="Obiekt Strzelec Wrocław – widok zewnętrzny" loading="lazy">
-          </div>
-          <div class="gallery-item" data-category="obiekt" role="button" tabindex="0" aria-label="Otwórz zdjęcie: Teren Strzelca">
-            <img src="assets/img/galeria/obiekt-1.jpg" alt="Teren obiektu Strzelec Wrocław" loading="lazy">
-          </div>
+        <div class="gallery-filters" role="group" aria-label="Filtry galerii">
+          <button class="gallery-filter active" data-filter="all">Wszystkie</button>
+          <button class="gallery-filter" data-filter="pokoje">Pokoje</button>
+          <button class="gallery-filter" data-filter="sale">Sale i imprezy</button>
+          <button class="gallery-filter" data-filter="kuchnia">Kuchnia</button>
+          <button class="gallery-filter" data-filter="obiekt">Obiekt</button>
         </div>
 
+        <div class="gallery-grid">
+
+          <!-- POKOJE -->
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/pokoj-glowny.jpg" alt="Pokój hotelowy" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/pokoj-3os.jpg" alt="Pokój 3-osobowy" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/pokoj-4os.jpg" alt="Pokój 4-osobowy" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/pokoj-5os.jpg" alt="Pokój 5-osobowy" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/aneks-kuchenny.jpg" alt="Aneks kuchenny" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="pokoje">
+            <img src="assets/img/pokoje/strefa-wypoczynkowa.jpg" alt="Strefa wypoczynkowa" loading="lazy">
+          </div>
+
+          <!-- SALE -->
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/wesela/sala-weselna.jpg" alt="Sala weselna" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/wesela/sala-zlota.jpg" alt="Sala złota" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/wesela/sala-niebieska.jpg" alt="Sala bankietowa" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/wesela/sala-bankietowa.jpg" alt="Sala bankietowa duża" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/galeria/impreza-rodzinna.jpg" alt="Impreza rodzinna" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/galeria/wydarzenie-okolicznosciowe.jpg" alt="Wydarzenie okolicznościowe" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="sale">
+            <img src="assets/img/hero/hero-imprezy.jpg" alt="Impreza plenerowa" loading="lazy">
+          </div>
+
+          <!-- KUCHNIA -->
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/restauracja/restauracja-glowna.jpg" alt="Restauracja" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/restauracja/salatka.jpg" alt="Sałatka" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/restauracja/kurczak.jpg" alt="Danie główne" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/restauracja/obiad.jpg" alt="Obiad" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/catering/bufet.jpg" alt="Bufet" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/catering/zakąski.jpg" alt="Przekąski" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/catering/ciasta.jpg" alt="Ciasta" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="kuchnia">
+            <img src="assets/img/wesela/stol-slodkosci.jpg" alt="Słodki stół" loading="lazy">
+          </div>
+
+          <!-- OBIEKT -->
+          <div class="gallery-item" data-category="obiekt">
+            <img src="assets/img/hero/hero-glowna.jpg" alt="Lobby hotelu" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="obiekt">
+            <img src="assets/img/galeria/obiekt-1.jpg" alt="Obiekt Strzelec" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="obiekt">
+            <img src="assets/img/galeria/obiekt-widok.jpg" alt="Widok obiektu" loading="lazy">
+          </div>
+          <div class="gallery-item" data-category="obiekt">
+            <img src="assets/img/galeria/impreza-plenerowa.jpg" alt="Teren zielony" loading="lazy">
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section" aria-labelledby="galeria-cta-heading">
+    <section class="cta-section" aria-labelledby="galeria-cta">
       <div class="container">
-        <h2 id="galeria-cta-heading">Chcesz zobaczyć więcej?</h2>
-        <p>Zapraszamy do odwiedzenia obiektu lub kontaktu telefonicznego.</p>
+        <h2 id="galeria-cta">Podoba Ci się to, co widzisz?</h2>
+        <p>Zadzwoń lub wyślij zapytanie — chętnie opowiemy o wolnych terminach i aktualnej ofercie.</p>
         <div class="cta-buttons">
-          <a href="tel:+48733123621" class="btn btn--outline btn--lg">📞 Zadzwoń: 733 123 621</a>
-          <a href="kontakt.html" class="btn btn--outline btn--lg">Kontakt</a>
+          <a href="kontakt.html" class="btn btn--gold btn--lg">Napisz do nas</a>
+          <a href="tel:+48733123621" class="btn btn--outline btn--lg">📞 733 123 621</a>
         </div>
       </div>
     </section>
@@ -163,58 +172,57 @@
   </main>
 
   <!-- Lightbox -->
-  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
-    <button class="lightbox-close" aria-label="Zamknij podgląd zdjęcia">✕</button>
-    <button class="lightbox-prev" aria-label="Poprzednie zdjęcie">‹</button>
-    <img class="lightbox-img" src="" alt="">
-    <button class="lightbox-next" aria-label="Następne zdjęcie">›</button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Przeglądarka zdjęć" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Zamknij">✕</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Poprzednie">‹</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <button class="lightbox-next" id="lightbox-next" aria-label="Następne">›</button>
   </div>
 
-  <!-- FOOTER START -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-name">Strzelec Wrocław</div>
-          <div class="footer-tagline">noclegi • restauracja • catering</div>
+          <img src="assets/img/logo.png" alt="Logo Hotel Strzelec" class="footer-logo">
+          <div class="footer-tagline">noclegi · przyjęcia · dobra kuchnia</div>
           <div class="footer-contact">
             <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener">📍 ul. Świątnicka 36, 52-018 Wrocław</a>
             <a href="tel:+48733123621">📞 733 123 621</a>
             <a href="tel:+48733123622">📞 733 123 622</a>
           </div>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook Strzelec Wrocław" title="Facebook">f</a>
-            <a href="#" aria-label="Instagram Strzelec Wrocław" title="Instagram">📸</a>
-          </div>
         </div>
         <div class="footer-col">
           <h4>Oferta</h4>
-          <nav class="footer-links" aria-label="Linki do podstron">
-            <a href="pokoje.html">Pokoje</a>
-            <a href="restauracja.html">Restauracja</a>
-            <a href="catering.html">Catering</a>
-            <a href="wesela-i-bankiety.html">Wesela i bankiety</a>
-            <a href="imprezy-plenerowe.html">Imprezy plenerowe</a>
+          <nav class="footer-links">
+            <a href="noclegi.html">Noclegi</a>
+            <a href="imprezy.html">Imprezy okolicznościowe</a>
+            <a href="catering.html">Catering i restauracja</a>
             <a href="zastawa.html">Wypożyczalnia zastawy</a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Informacje</h4>
-          <nav class="footer-links" aria-label="Linki informacyjne">
+          <nav class="footer-links">
             <a href="galeria.html">Galeria</a>
-            <a href="o-strzelcu.html">O Strzelcu</a>
             <a href="kontakt.html">Kontakt</a>
             <a href="praca.html">Praca</a>
           </nav>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span class="copyright-year">2026</span> Strzelec Wrocław. Wszelkie prawa zastrzeżone.</span>
+        <span>© <span class="copyright-year">2026</span> Hotel Strzelec Wrocław. Wszelkie prawa zastrzeżone.</span>
         <span>ul. Świątnicka 36, 52-018 Wrocław</span>
       </div>
     </div>
   </footer>
-  <!-- FOOTER END -->
+
+  <div class="mobile-bar" role="navigation" aria-label="Szybki kontakt">
+    <div class="mobile-bar-inner">
+      <a href="tel:+48733123621"><span class="bar-icon">📞</span>Zadzwoń</a>
+      <a href="kontakt.html"><span class="bar-icon">✉️</span>Zapytaj</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=ul.+%C5%9Awi%C4%85tnicka+36+Wroc%C5%82aw" target="_blank" rel="noopener"><span class="bar-icon">📍</span>Mapa</a>
+    </div>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
