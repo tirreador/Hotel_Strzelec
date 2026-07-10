@@ -124,11 +124,13 @@ strong { color: var(--text); font-weight: 600; }
   top: 0;
   z-index: 1000;
   height: var(--header-h);
-  background: var(--green);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(247,244,238,0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 .header-inner {
   display: flex;
@@ -161,7 +163,7 @@ strong { color: var(--text); font-weight: 600; }
   font-weight: 600;
   padding: 0.45rem 0.7rem;
   border-radius: var(--radius);
-  color: rgba(255,255,255,0.82);
+  color: var(--text);
   letter-spacing: 0.02em;
   text-transform: uppercase;
   transition: color var(--t), background var(--t);
@@ -169,16 +171,16 @@ strong { color: var(--text); font-weight: 600; }
 }
 .site-nav a:hover,
 .site-nav a.active {
-  color: #fff;
-  background: rgba(255,255,255,0.12);
+  color: var(--green);
+  background: var(--green-light);
 }
-.site-nav a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.site-nav a:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 
 .header-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--gold);
+  background: var(--green);
   color: var(--white) !important;
   font-size: 0.82rem;
   font-weight: 700;
@@ -189,14 +191,14 @@ strong { color: var(--text); font-weight: 600; }
   transition: background var(--t), transform var(--t), box-shadow var(--t);
   white-space: nowrap;
   flex-shrink: 0;
-  box-shadow: 0 2px 10px rgba(182,138,69,0.4);
+  box-shadow: 0 2px 10px rgba(26,74,30,0.3);
 }
 .header-cta:hover {
-  background: var(--gold-dark);
+  background: var(--green-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(182,138,69,0.5);
+  box-shadow: 0 4px 16px rgba(26,74,30,0.4);
 }
-.header-cta:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.header-cta:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
 /* Hamburger */
 .hamburger {
@@ -210,13 +212,13 @@ strong { color: var(--text); font-weight: 600; }
   border-radius: var(--radius);
   transition: background var(--t);
 }
-.hamburger:hover { background: rgba(255,255,255,0.12); }
-.hamburger:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.hamburger:hover { background: var(--green-light); }
+.hamburger:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .hamburger span {
   display: block;
   width: 100%;
   height: 2px;
-  background: rgba(255,255,255,0.9);
+  background: var(--text);
   border-radius: 2px;
   transition: transform var(--t), opacity var(--t);
 }
