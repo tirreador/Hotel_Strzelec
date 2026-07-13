@@ -11,6 +11,7 @@ Analiza i plan doprowadzenia strony z prototypu (statyczny HTML) do wersji produ
 | [`content-model.md`](./content-model.md) | referencyjny | Konkretny model treści (kolekcje + pola) wynikający z 15 podstron — pod implementację (krok B.4/F) |
 | [`plan-wdrozenia-i-estymacje.md`](./plan-wdrozenia-i-estymacje.md) | planistyczny | Kroki i wycena (osobodni) pełnego wdrożenia: Astro + Sveltia CMS + rezerwacje Opcja A. Zawiera scenariusz **AI/spec-driven** |
 | [`roadmap.md`](./roadmap.md) | wykonawczy | Kamienie milowe (M0–M6) z DoD i kandydatami na openspecy/zadania; ścieżka krytyczna i tory równoległe. Baza do tworzenia zadań |
+| [`sdd-optymalizacje.md`](./sdd-optymalizacje.md) | referencyjny | Techniki wykonania SDD+AI (grupa C) — złoty przykład, AC jako testy, równoległość itd. + estymaty mid vs senior |
 | [`astro-architektura-i-cms.md`](./astro-architektura-i-cms.md) | referencyjny | Jak działa Astro i Git-based CMS (Decap/Sveltia) — opis techniczny z przykładami |
 
 ## Od czego zacząć
@@ -27,18 +28,21 @@ Analiza i plan doprowadzenia strony z prototypu (statyczny HTML) do wersji produ
 | **Stack** | statyczny — **Astro** (SSG) | `cms-i-migracja-design.md` Opcja 1 |
 | **CMS** | **Sveltia** (Git-based, następca Decap), hosting panelu 0 zł, auth przez Cloudflare Workers | `astro-architektura-i-cms.md` §8 |
 | **Rezerwacje** | **Opcja A** — gotowy silnik + channel manager jako widget | `system-rezerwacji-design.md` §4, Załącznik A |
-| **Silnik — finaliści** | **Hotres.pl** (⭐ rynek PL/BLIK) lub **Beds24** (najtańszy, pełna customizacja) | `system-rezerwacji-design.md` §A.8 |
+| **Silnik** | finaliści **Hotres.pl** / **Beds24**; **wybór dokonywany przez klienta przed startem projektu** (spike rozstrzygnięty) | `system-rezerwacji-design.md` §A.8 |
 | **Bramka płatności** | **Przelewy24** (BLIK), model: zaliczka 20–30% | `system-rezerwacji-design.md` §5.9 |
+| **Zakres CMS (na start)** | edytowalne: pokoje, galeria, oferta, menu; reszta dev-editable | `content-model.md` §6 |
+| **Migracja URL** | **1:1** — nowa strona zastępuje obecną, przekierowania = jedna reguła | `cms-i-migracja-design.md` §3 |
+| **Analityka** | opcjonalna, poza rdzeniem (rekomendowany Plausible po starcie) | plan §C |
 | **Hosting** | Cloudflare Pages / Netlify (darmowy tier) | plan §2 |
 
-**Otwarte pytania:** wersja EN (i18n) tak/nie; wybór finalisty silnika (Hotres vs Beds24); model płatności OTA („Payments by Booking" vs własne obciążanie VCC).
+**Otwarte pytania:** wersja EN (i18n) tak/nie; model płatności OTA („Payments by Booking" vs własne obciążanie VCC).
 
 ## Zbiorczy koszt (TCO)
 
 **Jednorazowo (wdrożenie):**
-- Scenariusz bazowy (bez AI): **~21,5–35 osobodni**
-- Scenariusz AI/spec-driven: **~13–23 osobodni**
-- (× stawka dzienna zespołu = koszt jednorazowy)
+- Scenariusz bazowy (bez AI): **~20–33 osobodni**
+- SDD + AI + techniki + generacja speców z docs — **mid: ~11,5–20** / **senior: ~9–16 osobodni**
+- (× stawka dzienna zespołu = koszt jednorazowy; techniki: `sdd-optymalizacje.md`)
 
 **Miesięcznie (utrzymanie):**
 

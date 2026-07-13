@@ -159,3 +159,4 @@ const pokoje = defineCollection({
 - **i18n (EN):** model przewiduje pola tekstowe „płaskie". Jeśli wejdzie wersja EN, Sveltia wspiera i18n — wtedy pola tekstowe stają się wielojęzyczne (nakład osobny, patrz plan sekcja 5).
 - **Ceny pokoi:** `cenaOd` jest orientacyjna i redakcyjna; **twarde ceny/dostępność żyją w silniku rezerwacji** (Opcja A), nie w CMS. CMS pokazuje „od X zł", silnik sprzedaje.
 - **SEO:** każda strona/singleton ma `seo` (title/description/ogImage) — zastępuje dziś zaszyte w HTML metatagi.
+- **Zakres CMS (na start):** panel edycji obejmuje na start tylko **`pokoje`, `galeria`, `oferta`, `menu`**. Pozostałe kolekcje i singletony (`settings`, `strona-glowna`, `o-nas`, `kontakt`, `oferty-pracy`, `zastawa`, `aktualnosci`) są w pełni zdefiniowane i wydzielone jako dane (gotowe pod CMS), ale edytowane przez dev do czasu rozszerzenia panelu — koszt dołożenia później jest niski, bo dane są już ustrukturyzowane.

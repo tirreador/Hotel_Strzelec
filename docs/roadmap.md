@@ -33,10 +33,11 @@ Dwa równoległe tory:
 |---|---|---|
 | Repo + hosting (Cloudflare/Netlify Pages) + domena robocza + HTTPS | zadanie | `infra-setup` |
 | Skeleton Astro + CI/CD (build na push) | zadanie | `astro-bootstrap` |
-| **Wybór finalisty silnika: Hotres vs Beds24** | spike | `decyzja-silnik` |
 | **Decyzja: wersja EN tak/nie** | spike | `decyzja-i18n` |
 
-**DoD:** pusty projekt Astro buduje się i deployuje automatycznie; decyzje silnika i EN zapisane w README (log decyzji).
+> **Wybór silnika (Hotres vs Beds24) — podjęty przez klienta przed startem projektu.** Spike odpada; Faza E/M5 odblokowana od początku.
+
+**DoD:** pusty projekt Astro buduje się i deployuje automatycznie; decyzja EN zapisana w README (log decyzji); wybrany silnik potwierdzony.
 
 ---
 
@@ -80,7 +81,7 @@ Dwa równoległe tory:
 | Baner zgody cookies | zadanie | `cookie-consent` |
 | Formularz kontaktowy (Formspree) + walidacja + zgoda RODO + anty-spam | zadanie | `formularz-kontakt` |
 | SEO techniczne: sitemap, robots, canonical, schema.org `LodgingBusiness` | zadanie | `seo-techniczne` |
-| Analityka: GA4/Plausible + Search Console + GBP | zadanie | `analityka` |
+| *(opcjonalne, poza rdzeniem)* Analityka: Plausible/GA4 + Search Console | zadanie | `analityka` |
 | Wydajność: WebP/AVIF, preload fontów, width/height | zadanie | `wydajnosc-obrazy` |
 
 **DoD:** komplet stron prawnych podlinkowany; baner cookies działa; formularz wysyła; sitemap/robots/schema poprawne; Lighthouse w zielonych zakresach.
@@ -105,11 +106,11 @@ Dwa równoległe tory:
 
 ### M5 — Rezerwacje + płatności (Opcja A) — TOR RÓWNOLEGŁY
 **Rezultat:** gość rezerwuje i płaci bezpośrednio; dostępność zsynchronizowana z OTA (anty-overbooking).
-**Mapowanie planu:** Faza E. **Estymata:** ~4–8 dni. **Start:** wcześnie (lead-time), niezależnie od M1–M4.
+**Mapowanie planu:** Faza E. **Estymata:** ~4–8 dni. **Start:** wcześnie (lead-time OTA), niezależnie od M1–M4. **Silnik wybrany przed startem** — brak spike'a, M5 odblokowany.
 
 | Element | Typ | Kandydat na openspec |
 |---|---|---|
-| Konto u dostawcy + konfiguracja obiektu (polityki, regulamin) | zadanie | `silnik-konto` |
+| Konto u **wybranego** dostawcy + konfiguracja obiektu (polityki, regulamin) | zadanie | `silnik-konto` |
 | Mapowanie typów pokoi + ceny/sezony/restrykcje | zadanie | `silnik-pokoje-ceny` |
 | Channel manager: Booking+Agoda+portale PL + testy synchronizacji | zadanie | `channel-manager-ota` |
 | Bramka (Przelewy24) + model zaliczki + testy transakcji | zadanie | `platnosci-brama` |
@@ -123,11 +124,11 @@ Dwa równoległe tory:
 
 ### M6 — Go-live
 **Rezultat:** nowa strona na docelowej domenie, ruch i SEO przeniesione bez strat.
-**Mapowanie planu:** Faza D. **Estymata:** ~2,5–3,5 dnia.
+**Mapowanie planu:** Faza D. **Estymata:** ~2,25–2,75 dnia (URL 1:1 upraszcza przekierowania).
 
 | Element | Typ | Kandydat na openspec |
 |---|---|---|
-| Mapa starych URL → nowych + przekierowania 301 | zadanie | `redirecty-301` |
+| URL 1:1 → jedna globalna reguła przekierowań + potwierdzenie zgodności adresów | zadanie | `redirecty-301` |
 | Przełączenie domeny, DNS, weryfikacja HTTPS | zadanie | `domena-cutover` |
 | QA końcowe (a11y, mobile, linki, formularze, płatność testowa) | zadanie | `qa-koncowe` |
 | Monitoring + Search Console submit + bufor na poprawki | zadanie | `go-live-monitoring` |
@@ -149,7 +150,7 @@ Tor B (rezerwacje):   M0 ──────────► M5 ──────
 - **Tor B** może iść równolegle od M0; jego realnym ogranicznikiem jest **lead-time OTA**, nie praca dev.
 - **M6 wymaga** ukończenia M3, M4 i (dla pełnej sprzedaży) M5.
 
-**Zwinięta estymata (bazowo, z planu):** ~21,5–35 osobodni; wariant AI/spec-driven ~13–23 (plan §8).
+**Zwinięta estymata (z planu):** bazowo ~20–33 osobodni; **SDD+AI+techniki+generacja speców — mid ~11,5–20 / senior ~9–16** (plan §4, `sdd-optymalizacje.md`).
 
 ---
 

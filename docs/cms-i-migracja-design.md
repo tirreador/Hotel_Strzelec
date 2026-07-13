@@ -50,9 +50,9 @@ Poniższe trzeba dodać **niezależnie** od wyboru CMS. Część jest **obowiąz
 | **Analityka** | GA4 lub Plausible + Google Search Console + Google Business Profile | 🟠 |
 | **Wydajność** | Wdrożenie **WebP/AVIF**, preload fontów, `width/height` na `<img>` (redukcja CLS) | 🟠 |
 | **Hosting/infra** | Domena, HTTPS, hosting, CI/CD (deploy przy zmianie treści) | 🔴 |
-| **Migracja z obecnej strony** | Obecny `strzelecwroclaw.pl` to **WordPress** (README używa `wp-json`). Zachowanie SEO: mapowanie starych URL → nowych, **przekierowania 301** | 🟠 |
+| **Migracja z obecnej strony** | Nowa strona zastępuje obecną (prawdopodobnie WordPress — README używa `wp-json`). **URL-e mapują się 1:1**, więc przekierowania to jedna globalna reguła, a ryzyko SEO minimalne | 🟢 |
 
-**Uwaga o migracji SEO:** obecna domena ma historię i ruch. Zmiana adresów podstron bez przekierowań 301 = utrata pozycji w Google.
+**Uwaga o migracji SEO:** dzięki mapowaniu **URL 1:1** nie zmieniamy adresów podstron, więc ryzyko utraty pozycji jest minimalne. Pozostaje najwyżej jedna globalna reguła (jeśli Astro zmieni format `pokoje.html` → `/pokoje/`).
 
 ---
 
@@ -85,6 +85,8 @@ Mapowanie treści prototypu na „edytowalne obiekty" (definiuje model danych CM
 | **Oferty pracy** | `praca.html` | czasem |
 
 Wniosek: właściciel potrzebuje głównie edycji **tekstów, cen, zdjęć galerii i menu** — prosty zakres. Nie potrzeba CMS klasy enterprise.
+
+**Zakres CMS na start:** samodzielnie edytowalne przez właściciela będą **pokoje, galeria, oferta, menu** (najczęściej zmieniane). Pozostałe obiekty (dane kontaktowe, teksty stron, o nas, praca, zastawa, aktualności) pozostają jako ustrukturyzowane dane w repo edytowane przez dev — są już „gotowe pod CMS", więc dołożenie ich do panelu w kolejnej iteracji jest tanie. Zawężenie to obniża nakład B.4 i F (patrz plan §4.1).
 
 ---
 
