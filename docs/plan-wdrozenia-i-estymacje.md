@@ -148,6 +148,35 @@ Założenia z sekcji 2 (URL 1:1, CMS = 4 obszary, finalista wybrany przed starte
 - **Czas kalendarzowy** rządzi się lead-time'em połączeń OTA i treści prawnych, nie tylko osobodniami (sekcja 8.4).
 - **Rezerwacje (Faza E) są stałą częścią zakresu** — nie rozważamy wariantu bez online-bookingu.
 
+### 4.1. Estymata kalendarzowa (czas do go-live, wall-clock)
+
+Osobodni ≠ czas kalendarzowy. Tu żyje zysk z **szybkości AI** (krótsza latencja pętli) i **równoległości** (tory A/B naraz) — których liczby osobodni z definicji nie pokazują. Jednocześnie kalendarz ma **własną podłogę: lead-time'y zewnętrzne**, niezależne od nakładu i doświadczenia.
+
+**Założenia:** 1 deweloper + AI; wykorzystanie czasu ~70–80% (review, przełączanie kontekstu, oczekiwanie na inputy); tor B (rezerwacje) uruchomiony w M0, więc lead-time OTA **overlapuje** tor A; treści prawne zamówione na starcie; 5 dni roboczych/tydzień.
+
+**Lead-time'y zewnętrzne (blokują kalendarz, nie osobodni):**
+
+| Czynnik | Lead-time (kalendarz) |
+|---|---|
+| Akceptacja konta u dostawcy silnika | ~1–3 dni robocze |
+| **Zatwierdzenie połączeń OTA (Booking.com)** | ~3–10 dni roboczych |
+| Treści prawne (RODO/regulamin) od klienta/prawnika | ~3–15 dni |
+| Propagacja DNS przy przełączeniu domeny | ~kilka h – 48 h |
+
+**Czas do go-live:**
+
+| Scenariusz | Mid | Senior |
+|---|---|---|
+| Optymistyczny (brak opóźnień, wysoka dostępność) | ~2–2,5 tyg | ~1,5–2 tyg |
+| Realistyczny (bufor review + typowe lead-time) | ~3,5–4,5 tyg | ~3–4 tyg |
+| Z opóźnieniami zewnętrznymi (wolne OTA/prawne) | ~5–7 tyg | ~4,5–6 tyg |
+
+**Ścieżka krytyczna:** zwykle **tor A** (strona + CMS: M0→M2→M4→M6) wyznacza kalendarz; tor B (rezerwacje) overlapuje i nie wydłuża daty, **chyba że** zatwierdzenie OTA lub treści prawne się opóźnią — wtedy to one stają się wąskim gardłem.
+
+- **Skraca kalendarz:** równoległość (git worktrees), szybki obrót pętli AI, **wczesne** zamówienie treści prawnych i kont OTA (w M0).
+- **Wydłuża:** opóźnienia zewnętrzne, niska dostępność dev, dużo rund review.
+- **Uwaga:** w scenariuszach „realistyczny/z opóźnieniami" różnica mid↔senior maleje — bo kalendarz coraz bardziej rządzi się lead-time'ami zewnętrznymi, na które doświadczenie nie wpływa.
+
 ---
 
 ## 5. Świadomie poza zakresem

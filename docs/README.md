@@ -44,6 +44,8 @@ Analiza i plan doprowadzenia strony z prototypu (statyczny HTML) do wersji produ
 - SDD + AI + techniki + generacja speców z docs — **mid: ~11,5–20** / **senior: ~9–16 osobodni**
 - (× stawka dzienna zespołu = koszt jednorazowy; techniki: `sdd-optymalizacje.md`)
 
+**Czas do go-live (kalendarz, ≠ osobodni):** realistycznie **~3,5–4,5 tyg (mid)** / **~3–4 tyg (senior)**; rządzony lead-time'em OTA i treści prawnych — szczegóły w planie §4.1.
+
 **Miesięcznie (utrzymanie):**
 
 | Pozycja | Koszt |
